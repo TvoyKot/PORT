@@ -31,5 +31,8 @@
     "jquery": "^3.7.0",
     "sass": "^1.62.1",
     "slick-slider": "^1.8.2"
+  },
+  "dependencies": {
+    "mixitup": "^3.3.1"
   }
 }

@@ -336,6 +336,9 @@
         width: 100%;
         position: relative;
     }
+    &__item:first-child {
+        align-self: flex-end;
+    }
     &__item:nth-child(odd) {
         align-self: flex-end;
     }
@@ -371,6 +374,12 @@
         padding-right: 125px;
         padding-left: 50px;
         color: #c2c2c2;
+        margin-bottom: 17px;
+    }
+    &__item-link {
+        display: block;
+        text-align: right;
+        padding-right: 125px;
     }
 }
 .team {
