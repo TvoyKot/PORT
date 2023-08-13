@@ -1,17 +1,328 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WORKING</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <title>PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Oswald:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.min.css">
 </head>
 
 <body>
-    
-    <script src="js/main.min.js"></script>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__top">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">WORKS</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">ABOUT</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">SERVICES</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">BLOG</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">CONTACT</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__content">
+                    <h1 class="header__title">WHERE GREAT IDEAS COME TO LIFE</h1>
+                    <p class="header__text">Passionate creative studio helping startups grow their business!</p>
+                </div>
+                <div class="header__bottom">
+                    <div class="header__bottom-num">
+                        <span>01</span>
+                    </div>
+                    <div class="header__bottom-num">
+                        <span>02</span>
+                    </div>
+                    <div class="header__bottom-num">
+                        <span>03</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="we">
+        <div class="container">
+            <div class="we__inner">
+                <div class="we__item">
+                    <div class="we__item-box">
+                        <h4 class="we__item-title">WE ARE</h4>
+                        <p class="we__item-subtitle">THE SQWD</p>
+                        <p class="we__item-text">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt.</p>
+                    </div>
+                    <img src="../images/we/1.png" alt="image" class="we__item-img">
+                </div>
+                <div class="we__item-img-green">
+                    <img src="../images/we/green-box.png" alt="image">
+                </div>
+                <div class="we__item we__item--right">
+                    <img src="../images/we/2.png" alt="image" class="we__item-img--right we__item-img--right ">
+                    <div class="we__item-box--right">
+                        <p class="we__item-text">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container">
+            <h3 class="services__title title">Our Services</h3>
+            <div class="services__items">
+                <div class="services__item">
+                    <div class="services__item-top">
+                        <h6 class="services__item-title">Branding</h6>
+                        <div class="services__item-img">
+                            <img src="../images/services/icon.jpg" alt="icon">
+                        </div>
+                    </div>
+                    <p class="services__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt.</p>
+                    <a href="#" class="services__item-link">READ MORE</a>
+                </div>
+                <div class="services__item">
+                    <div class="services__item-top">
+                        <h6 class="services__item-title">DESIGN</h6>
+                        <div class="services__item-img">
+                            <img src="../images/services/icon.jpg" alt="icon">
+                        </div>
+                    </div>
+                    <p class="services__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt.</p>
+                    <a href="#" class="services__item-link">READ MORE</a>
+                </div>
+                <div class="services__item">
+                    <div class="services__item-top">
+                        <h6 class="services__item-title">DEVELOPMENT</h6>
+                        <div class="services__item-img">
+                            <img src="../images/services/icon.jpg" alt="icon">
+                        </div>
+                    </div>
+                    <p class="services__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt.</p>
+                    <a href="#" class="services__item-link">READ MORE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="works">
+        <div class="container">
+            <div class="works__info">
+                <h3 class="works__title title">Latest Works
+                </h3>
+                <div class="works__buttons">
+                    <button class="works__btn works__btn--active">ALL</button>
+                    <button class="works__btn" data-filter=".web">WEB DESIGN</button>
+                    <button class="works__btn" data-filter=".branding">BRANDING</button>
+                    <button class="works__btn" data-filter=".photo">PHOTOGRAPHY</button>
+                    <button class="works__btn" data-filter=".illust">ILLUSTRATION</button>
+                </div>
+            </div>
+            <div class="works__items">
+                <div class="works__item photo">
+                    <img src="../images/works/1.png" alt="image" class="works__item-img">
+                    <h5 class="works__item-title title">100 YEARS <br> PHOTOGRAPHY</h5>
+                    <p class="works__item-category">Photography</p>
+                    <p class="works__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" class="works__item-link">READ MORE</a>
+                </div>
+                <div class="works__item">
+                    <img src="../images/works/2.png" alt="image" class="works__item-img">
+                    <h5 class="works__item-title title">A KITTEN’S <br> LIFE</h5>
+                    <p class="works__item-category">Photography</p>
+                    <p class="works__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" class="works__item-link">READ MORE</a>
+                </div>
+                <div class="works__item">
+                    <img src="../images/works/3.png" alt="image" class="works__item-img">
+                    <h5 class="works__item-title title">GROOVEMADE <br>
+                        PRODUCTS FOR MAC</h5>
+                    <p class="works__item-category">Photography</p>
+                    <p class="works__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" class="works__item-link">READ MORE</a>
+                </div>
+                <div class="works__item">
+                    <img src="../images/works/4.png" alt="image" class="works__item-img">
+                    <h5 class="works__item-title title">APPLE’s <br> LOST MAGIC</h5>
+                    <p class="works__item-category">Photography</p>
+                    <p class="works__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" class="works__item-link">READ MORE</a>
+                </div>
+            </div>
+            <a href="#" class="works__link">view more</a>
+        </div>
+    </section>
+    <section class="team">
+        <div class="container">
+            <h3 class="team__title title">The Team</h3>
+            <div class="team__items">
+                <div class="team__item">
+                    <img src="../images/team/1.png " alt="team" class="team__item-img">
+                    <div class="team__item-box">
+                        <p class="team__item-name">TOM JONES</p>
+                        <p class="team__item-job">Creative Director</p>
+                        <p class="team__item-text">Create with simplicity in mind!</p>
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img src="../images/team/2.png " alt="team" class="team__item-img">
+                    <div class="team__item-box">
+                        <p class="team__item-name">MICHAEL FRAUP</p>
+                        <p class="team__item-job">Creative Director</p>
+                        <p class="team__item-text">Create with simplicity in mind!</p>
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img src="../images/team/3.png " alt="team" class="team__item-img">
+                    <div class="team__item-box">
+                        <p class="team__item-name">TIM CAHILL</p>
+                        <p class="team__item-job">Creative Director</p>
+                        <p class="team__item-text">Create with simplicity in mind!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="team__comment">
+        <div class="container">
+            <div class="team__comment-inner">
+                <div class="team__comment-item">
+                    <blockquote class="blockquote">
+                        <p class="team__comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <img src="../images/team/blockquote.png" alt="icon">
+                        <p class="team__comment-name">DAVID JAMES<span>/ Web Design</span></p>
+                    </blockquote>
+
+                    <div class="team__comment-rate">
+                        <img src="../images/team/rate-star.png" alt="icon-star" class="team__comment-rate-star">
+                        <img src="../images/team/rate-star.png" alt="icon-star" class="team__comment-rate-star">
+                        <img src="../images/team/rate-star.png" alt="icon-star" class="team__comment-rate-star">
+                        <img src="../images/team/rate-star.png" alt="icon-star" class="team__comment-rate-star">
+                        <img src="../images/team/rate-star.png" alt="icon-star" class="team__comment-rate-star">
+                    </div>
+                </div>
+                <div class="team__comment-item">
+                    <blockquote class="blockquote">
+                        <p class="team__comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <img src="../images/team/blockquote.png" alt="icon">
+                        <p class="team__comment-name">DAVID JAMES<span>/ Web Design</span></p>
+                    </blockquote>
+
+                    <div class="team__comment-rate">
+                        <img src="../images/team/rate-star.png" alt="icon-star" class="team__comment-rate-star">
+                        <img src="../images/team/rate-star.png" alt="icon-star" class="team__comment-rate-star">
+                        <img src="../images/team/rate-star.png" alt="icon-star" class="team__comment-rate-star">
+                        <img src="../images/team/rate-star.png" alt="icon-star" class="team__comment-rate-star">
+                        <img src="../images/team/rate-star.png" alt="icon-star" class="team__comment-rate-star">
+                    </div>
+                </div>
+                <div class="team__comment-item">
+                    <blockquote class="blockquote">
+                        <p class="team__comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <img src="../images/team/blockquote.png" alt="icon">
+                        <p class="team__comment-name">DAVID JAMES<span>/ Web Design</span></p>
+                    </blockquote>
+
+                    <div class="team__comment-rate">
+                        <img src="../images/team/rate-star.png" alt="icon-star" class="team__comment-rate-star">
+                        <img src="../images/team/rate-star.png" alt="icon-star" class="team__comment-rate-star">
+                        <img src="../images/team/rate-star.png" alt="icon-star" class="team__comment-rate-star">
+                        <img src="../images/team/rate-star.png" alt="icon-star" class="team__comment-rate-star">
+                        <img src="../images/team/rate-star.png" alt="icon-star" class="team__comment-rate-star">
+                    </div>
+                </div>
+                <div class="team__comment-item">
+                    <blockquote class="blockquote">
+                        <p class="team__comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <img src="../images/team/blockquote.png" alt="icon">
+                        <p class="team__comment-name">DAVID JAMES<span>/ Web Design</span></p>
+                    </blockquote>
+
+                    <div class="team__comment-rate">
+                        <img src="../images/team/rate-star.png" alt="icon-star" class="team__comment-rate-star">
+                        <img src="../images/team/rate-star.png" alt="icon-star" class="team__comment-rate-star">
+                        <img src="../images/team/rate-star.png" alt="icon-star" class="team__comment-rate-star">
+                        <img src="../images/team/rate-star.png" alt="icon-star" class="team__comment-rate-star">
+                        <img src="../images/team/rate-star.png" alt="icon-star" class="team__comment-rate-star">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offer">
+        <div class="container">
+            <div class="offer__items">
+                <a class="offer__item" href="#">
+                    <img src="../images/team/case-icon.png" alt="icon" class="offer__item-img">
+                    <h5 class="offer__item-title">Want to work together?</h5>
+                    <p class="offer__item-text">Amazing. Tell us about your project!</p>
+                </a>
+                <a class="offer__item offer__item--green" href="#">
+                    <img src="../images/team/letter-icon.png" alt="icon" class="offer__item-img">
+                    <h5 class="offer__item-title">Contact us</h5>
+                    <p class="offer__item-text">Get in touch</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+       
+            <div class="footer__top">
+                <div class="container">
+                     <p class="footer__top-text">3rd Floor, Santa Monica Beach, CA, San Francisco</p>
+                <a class="footer__top-text" href="tel:3590123456789">(359) 0 123 456 789 - <span>info@yourmail.com</span></a>
+                <ul class="social__list">
+                    <li class="social__list-item">
+                    <img src="../images/footer/facebook.png" alt="icon">
+                    </li>
+                    <li class="social__list-item">
+                <img src="../images/footer/twitter.png"  alt="icon">
+                    </li>
+                    <li class="social__list-item">
+                        <img src="../images/footer/pinterest.png" alt="icon">
+                    </li>
+                </ul>
+                </div>
+               
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <p class="footer__copy">Copyright 2016 - All Rights Reserved - Designed by JD</p>
+                </div>
+                
+            </div>
+  
+    </footer>
+    <script src="../js/main.min.js"></script>
 </body>
 
 </html>

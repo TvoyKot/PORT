@@ -57,7 +57,7 @@ function images() {
 }
 
 function sprite() {
-    return src('app/images/src/svg/*.svg')
+    return src('app/images/src/svgElements/*.svg')
         .pipe(svgMin({
             js2svg: {
                 pretty: true
@@ -100,6 +100,7 @@ function  scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
         'node_modules/slick-slider/slick/slick.js',
+        'node_modules/mixitup/dist/mixitup.js',
         'app/js/main.js'
     ])
     .pipe(concat('main.min.js'))

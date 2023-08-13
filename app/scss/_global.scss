@@ -4,17 +4,18 @@ body {
   scroll-behavior: smooth;
 }
 
-// body {
-  // display: flex;
-  // flex-direction: column;
-//   @extend %ubuntu-light;
-//   color: #fff;
-//   font-size: 17px;
-//   line-height: 21px;
-//   overflow-x: hidden;
-//   overflow-y: scroll;
-//   position: relative;
-// }
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  font-size: 14px;
+  line-height: normal;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+}
 
 .wrapper {
 	display: flex;
@@ -31,8 +32,25 @@ body {
 }
 
 .container {
-  max-width: 1270px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #252525;
+  position: relative;
+  line-height: normal;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 2px;
+    background-color: $title;
+    bottom: 0;
+    left: 0;
+  }
+}
